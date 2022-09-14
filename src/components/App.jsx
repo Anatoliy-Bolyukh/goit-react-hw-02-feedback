@@ -1,6 +1,6 @@
 
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import Button from "./Button/Button";
 import Section from "./Section/Section";
 import Statistics from "./Statistics/Statistics";
