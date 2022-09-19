@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 const FeedbackOptions = ({ children, onFeedback }) => {
   return (
@@ -18,6 +19,11 @@ const FeedbackOptions = ({ children, onFeedback }) => {
       })}
     </>
   );
+};
+
+FeedbackOptions.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.string),
+  onFeedback: PropTypes.func,
 };
 
 export default FeedbackOptions;

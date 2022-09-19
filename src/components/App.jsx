@@ -36,7 +36,12 @@ class App extends React.Component {
   render() {
     const { good, neutral, bad } = this.state;
     return (
-      <>
+      <div style={{
+          display: "flex",
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
         <Section title={'Please leave feedback'}>
           <FeedbackOptions
             children={this.feedback(this.state)}
@@ -56,7 +61,7 @@ class App extends React.Component {
             />
           )}
         </Section>
-      </>
+      </div>
     );
   };
 };
